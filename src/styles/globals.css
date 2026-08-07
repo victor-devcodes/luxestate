@@ -1,0 +1,27 @@
+/* Smooth scrolling when clicking anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Default body styles */
+body {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+/* Better image behavior */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove underline from links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove bullet points from lists */
+ul {
+  list-style: none;
+}
