@@ -152,7 +152,7 @@ const Hero = () => {
 
                       <HiOutlineMapPin />
 
-                      Beverly Hills, California
+                      {featuredProperty.location}
 
                   </div>
 

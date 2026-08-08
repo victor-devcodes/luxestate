@@ -6,13 +6,14 @@ import Button from "./components/ui/Button";
 import Container from "./components/ui/Container";
 import Section from "./components/ui/Section";
 import Hero from "./sections/hero/Hero";
+import FeaturedProperties from "./sections/FeaturedProperties/FeaturedProperties";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      
+      <FeaturedProperties />
     </>
   );
 }

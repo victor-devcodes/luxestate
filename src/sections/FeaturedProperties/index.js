@@ -1,0 +1,1 @@
+import { properties } from "../../data/properties";
