@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+/* =========================
+   PROPERTY GALLERY
+========================= */
+
+.property-main-gallery .swiper-button-next,
+.property-main-gallery .swiper-button-prev {
+  width: 58px;
+  height: 38px;
+  border-radius: 9999px;
+  background: white;
+  color: black;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.property-main-gallery .swiper-button-next:hover,
+.property-main-gallery .swiper-button-prev:hover {
+  background: black;
+  color: white;
+}
+
+.property-main-gallery .swiper-button-next::after,
+.property-main-gallery .swiper-button-prev::after {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.button{
+  color: #fff;
+}

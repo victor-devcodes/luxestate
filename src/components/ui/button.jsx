@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 const Button = ({
   children,
   variant = "primary",
+  onClick,
 }) => {
 
   const styles = {
@@ -21,6 +22,7 @@ const Button = ({
       whileTap={{
         scale: 0.97,
       }}
+      onClick={onClick}
       className={`
         px-6
         py-3
