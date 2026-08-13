@@ -1,6 +1,6 @@
-const Section = ({ children,  className = "", }) => {
+const Section = ({ children,  className = "", id,}) => {
   return (
-    <section className={`py-20 ${className}`}>
+    <section id={id} className={`py-20 ${className}`}>
       {children}
     </section>
   );

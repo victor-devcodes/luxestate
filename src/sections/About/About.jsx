@@ -22,116 +22,9 @@ const About = () => {
         >
 
           {/* =========================
-              IMAGE
-          ========================= */}
-
-          <motion.div
-            initial={{
-              opacity: 0,
-              x: -50,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-            }}
-            viewport={{
-              once: true,
-              amount: 0.2,
-            }}
-            transition={{
-              duration: 0.8,
-              ease: "easeOut",
-            }}
-            className="relative"
-          >
-
-            {/* Image */}
-
-            <div
-              className="
-                relative
-                overflow-hidden
-                rounded-4xl
-              "
-            >
-
-              <img
-                src={aboutImage}
-                alt="Luxury modern residence"
-                className="
-                  h-125
-                  w-full
-                  object-cover
-                  transition-transform
-                  duration-1000
-                  hover:scale-105
-                  lg:h-162
-                "
-              />
-
-              {/* Image Overlay */}
-
-              <div
-                className="
-                  absolute
-                  inset-0
-                  bg-linear-to-t
-                  from-black/40
-                  via-transparent
-                  to-transparent
-                "
-              />
-
-            </div>
-
-
-            {/* Experience Badge */}
-
-            <motion.div
-              initial={{
-                opacity: 0,
-                y: 30,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              viewport={{
-                once: true,
-              }}
-              transition={{
-                duration: 0.6,
-                delay: 0.3,
-              }}
-              className="
-                absolute
-                bottom-6
-                left-6
-                rounded-2xl
-                bg-white
-                p-5
-                shadow-2xl
-                sm:bottom-8
-                sm:left-8
-              "
-            >
-
-              <p className="text-3xl font-bold">
-                15+
-              </p>
-
-              <p className="mt-1 text-sm text-gray-500">
-                Years of Excellence
-              </p>
-
-            </motion.div>
-
-          </motion.div>
-
-
-          {/* =========================
               CONTENT
           ========================= */}
+
 
           <motion.div
             initial={{
@@ -295,6 +188,113 @@ const About = () => {
               </a>
 
             </div>
+
+          </motion.div>
+
+          {/* =========================
+              IMAGE
+          ========================= */}
+
+          <motion.div
+            initial={{
+              opacity: 0,
+              x: -50,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            viewport={{
+              once: true,
+              amount: 0.2,
+            }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+            }}
+            className="relative"
+          >
+
+            {/* Image */}
+
+            <div
+              className="
+                relative
+                overflow-hidden
+                rounded-4xl
+              "
+            >
+
+              <img
+                src={aboutImage}
+                alt="Luxury modern residence"
+                className="
+                  h-125
+                  w-full
+                  object-cover
+                  transition-transform
+                  duration-1000
+                  hover:scale-105
+                  lg:h-162
+                "
+              />
+
+              {/* Image Overlay */}
+
+              <div
+                className="
+                  absolute
+                  inset-0
+                  bg-linear-to-t
+                  from-black/40
+                  via-transparent
+                  to-transparent
+                "
+              />
+
+            </div>
+
+
+            {/* Experience Badge */}
+
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 30,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              viewport={{
+                once: true,
+              }}
+              transition={{
+                duration: 0.6,
+                delay: 0.3,
+              }}
+              className="
+                absolute
+                bottom-6
+                left-6
+                rounded-2xl
+                bg-white
+                p-5
+                shadow-2xl
+                sm:bottom-8
+                sm:left-8
+              "
+            >
+
+              <p className="text-3xl font-bold">
+                15+
+              </p>
+
+              <p className="mt-1 text-sm text-gray-500">
+                Years of Excellence
+              </p>
+
+            </motion.div>
 
           </motion.div>
 

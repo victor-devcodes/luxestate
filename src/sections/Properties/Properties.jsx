@@ -15,7 +15,7 @@ const Properties = () => {
     useState(properties);
 
   return (
-    <Section>
+    <Section id="properties">
 
       <Container>
 

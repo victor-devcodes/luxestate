@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
@@ -19,16 +20,35 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     <Logo />
                     <nav className="hidden lg:flex items-center gap-10">
                         {NAV_LINKS.map((link) => (
-                            <a
+                            <Link
                             key={link.id}
-                            href={link.href}
+                            to={link.href}
                             className="text-sm font-medium text-gray-700 transition-colors duration-300 hover:text-black"
                             >
                                 {link.label}
-                            </a>
+                            </Link>
                         ))}
                         <div className="hidden lg:flex items-center gap-4">
-                        <Button>Contact Agent</Button>
+                        
+                        <Button>
+                            <Link
+                                to="/book-inspection"
+                                className="
+                                    inline-flex
+                                    items-center
+                                    justify-center
+                                    rounded-xl
+                                    bg-black
+                                    text-sm
+                                    font-semibold
+                                    text-white
+                                    transition
+                                    hover:bg-gray-800
+                                "
+                                >
+                                Book an Inspection
+                            </Link>                            
+                        </Button>
                         <Button variant="secondary">Call Now</Button>
                         </div>
                     </nav>
@@ -55,20 +75,36 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
 
                             {NAV_LINKS.map((link) => (
 
-                                <a
+                                <Link
                                 key={link.id}
-                                href={link.href}
+                                to={link.href}
                                 onClick={() => setIsMenuOpen(false)}
                                 className="border-b border-gray-100 py-4 text-gray-700 transition-colors hover:text-black"
                                 >
                                 {link.label}
-                                </a>
+                                </Link>
 
                             ))}
 
-                            <div className="grid mt-6 gap-10">
+                            <div className="grid mt-6 gap-8">
                                 <Button>
-                                    Contact Agent
+                                    <Link
+                                        to="/book-inspection"
+                                        className="
+                                            inline-flex
+                                            items-center
+                                            justify-center
+                                            rounded-xl
+                                            bg-black
+                                            text-sm
+                                            font-semibold
+                                            text-white
+                                            transition
+                                            hover:bg-gray-800
+                                        "
+                                        >
+                                        Book an Inspection
+                                    </Link>
                                 </Button>
                                 <Button variant="secondary">Call Now</Button>
 

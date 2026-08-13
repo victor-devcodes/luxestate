@@ -2,26 +2,26 @@ export const NAV_LINKS = [
   {
     id: 1,
     label: "Home",
-    href: "#",
+    href: "/",
   },
   {
     id: 2,
     label: "Properties",
-    href: "#",
+    href: "/properties",
   },
   {
     id: 3,
     label: "About",
-    href: "#",
+    href: "/about",
   },
   {
     id: 4,
     label: "Agents",
-    href: "#",
+    href: "/agents",
   },
   {
     id: 5,
     label: "Contact",
-    href: "#",
+    href: "/contact",
   },
 ];

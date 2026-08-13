@@ -1,6 +1,7 @@
 import Container from "../../components/ui/Container";
 import Section from "../../components/ui/Section";
 import Button from "../../components/ui/Button";
+import { Link } from "react-router-dom";
 
 import heroImage from "../../assets/images/hero-house.jpg";
 import { HiOutlineMapPin } from "react-icons/hi2";
@@ -50,11 +51,19 @@ const Hero = () => {
               }}
             >
               <Button>
-                {heroContent.primaryButton}
+                <Link
+                    to="/book-inspection"
+                    className=" text-sm font-semibold transition ">                                   
+                  {heroContent.primaryButton}
+                </Link>
               </Button>
 
               <Button variant="secondary">
-                {heroContent.secondaryButton}
+                  <Link
+                    to="/properties"
+                    className=" text-sm font-semibold transition " >
+                    {heroContent.secondaryButton}             
+                  </Link>
               </Button>
             </motion.div>
 

@@ -6,9 +6,9 @@ export const heroContent = {
   description:
     "Explore an exclusive collection of premium homes, waterfront villas, and modern residences curated for exceptional living.",
 
-  primaryButton: "Explore Properties",
+  primaryButton: "Book Inspection",
 
-  secondaryButton: "Book Consultation",
+  secondaryButton: "Explore Properties",
 };
 
 export const heroStats = [
