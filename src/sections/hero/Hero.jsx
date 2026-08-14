@@ -68,7 +68,7 @@ const Hero = () => {
             </motion.div>
 
             <motion.div
-              className="mt-12 flex flex-wrap gap-10"
+              className="text-xs sm:text-lg mt-12 flex flex-wrap gap-10"
               initial={{
                 opacity: 0,
                 y: 40,
