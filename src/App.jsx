@@ -7,7 +7,7 @@ import Button from "./components/ui/Button";
 import Container from "./components/ui/Container";
 import Section from "./components/ui/Section";
 import Hero from "./sections/hero/Hero";
-import FeaturedProperties from "./sections/FeaturedProperties/FeaturedProperties";
+
 import Properties from "./sections/Properties/Properties";
 import PropertyDetails from "./pages/PropertyDetails/PropertyDetails";
 import About from "./sections/About/About";
