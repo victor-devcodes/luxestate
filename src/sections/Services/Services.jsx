@@ -32,7 +32,7 @@ const services = [
 
 const Services = () => {
   return (
-    <Section className="bg-[#f7f7f5]">
+    <Section id="services" className="bg-black/5">
 
       <Container>
 
@@ -65,7 +65,7 @@ const Services = () => {
                 font-semibold
                 uppercase
                 tracking-[0.3em]
-                text-gray-500
+                text-gray-600
               "
             >
               What We Offer
@@ -102,7 +102,7 @@ const Services = () => {
               "
             >
               More than property.
-              <span className="block text-gray-400">
+              <span className="block text-gray-500">
                 A complete experience.
               </span>
             </h2>
@@ -113,7 +113,7 @@ const Services = () => {
                 max-w-2xl
                 text-base
                 leading-8
-                text-gray-600
+                text-gray-700
               "
             >
               From discovering the right residence to completing
@@ -174,7 +174,7 @@ const Services = () => {
                   className="
                     text-sm
                     font-medium
-                    text-gray-400
+                    text-gray-600
                     transition-colors
                     duration-300
                     group-hover:text-black
@@ -209,7 +209,7 @@ const Services = () => {
                   max-w-xl
                   text-sm
                   leading-7
-                  text-gray-500
+                  text-gray-600
                 "
               >
                 {service.description}

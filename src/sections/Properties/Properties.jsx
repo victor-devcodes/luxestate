@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import Container from "../../components/ui/Container";
 import Section from "../../components/ui/Section";
@@ -10,9 +11,12 @@ import PropertyCard from "./PropertyCard/PropertyCard";
 
 import { properties } from "../../data/properties";
 
-const Properties = () => {
+const Properties = ({ limit }) => {
   const [filteredProperties, setFilteredProperties] =
     useState(properties);
+  const displayedProperties = limit
+    ? filteredProperties.slice(0, limit)
+    : filteredProperties;
 
   return (
     <Section id="properties">
@@ -76,10 +80,8 @@ const Properties = () => {
 
 
         {/* Property Search */}
-
-        <PropertySearch
-          onSearch={setFilteredProperties}
-        />
+        <PropertySearch onSearch={setFilteredProperties}/>
+        
 
 
         {/* Results Header */}
@@ -95,7 +97,9 @@ const Properties = () => {
         ">
           <div>
             <h3 className="text-2xl font-semibold tracking-tight">
-              Featured Properties
+               {limit
+                ? "Featured Properties"
+                : "All Properties"}
             </h3>
 
             <p className="mt-1 text-sm text-gray-500">
@@ -108,7 +112,9 @@ const Properties = () => {
             font-medium
             text-gray-500
           ">
-            {filteredProperties.length} properties found
+            {limit
+              ? `Showing ${displayedProperties.length} featured properties`
+              : `${filteredProperties.length} properties found`}
           </p>
         </div>
 
@@ -145,7 +151,7 @@ const Properties = () => {
 
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-              {filteredProperties.map((property) => (
+              {displayedProperties.map((property) => (
 
                 <PropertyCard
                   key={property.id}
@@ -159,6 +165,53 @@ const Properties = () => {
           </AnimatePresence>
 
         )}
+
+                  {/* View All */}
+
+        {limit && (
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 20,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            viewport={{
+              once: true,
+            }}
+            transition={{
+              duration: 0.6,
+            }}
+            className="mt-12 flex justify-center"
+          >
+
+            <Link
+              to="/properties"
+              className="
+                inline-flex
+                items-center
+                justify-center
+                rounded-xl
+                border
+                border-black
+                px-7
+                py-3.5
+                text-sm
+                font-semibold
+                text-black
+                transition
+                duration-300
+                hover:bg-black/20
+              "
+            >
+              View All Properties
+              <span className="ml-2">&gt;&gt;</span>
+            </Link>
+
+          </motion.div>
+        )}        
 
       </Container>
 

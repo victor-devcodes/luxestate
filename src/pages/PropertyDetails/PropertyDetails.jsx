@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import { FaArrowLeft, FaBed, FaBath, FaRulerCombined, FaMapMarkerAlt, FaPhone, FaEnvelope, FaCalendarAlt, FaCheck, FaHeart,   FaShareAlt,   FaExpand,   FaTimes, } from "react-icons/fa";
+import { FaArrowLeft, FaBed, FaBath, FaRulerCombined, FaMapMarkerAlt, FaCheck, FaExpand, FaTimes, } from "react-icons/fa";
 
 import Container from "../../components/ui/Container";
 import Section from "../../components/ui/Section";
@@ -117,7 +117,7 @@ const PropertyDetails = () => {
           className="mb-8"
         >
           <Link
-            to="/"
+            to="/properties"
             className="
               inline-flex
               items-center

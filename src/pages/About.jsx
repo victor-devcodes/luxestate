@@ -1,13 +1,16 @@
 import { motion } from "framer-motion";
+import { Routes, Route } from "react-router-dom";
 
 import Container from "../components/ui/Container";
 import Section from "../components/ui/Section";
+import Agents from "./Agents";
+import CTA from "../sections/CTA/CTA";
 
 const AboutPage = () => {
   return (
     <main>
 
-      <Section>
+      <Section className="bg-black/5">
 
         <Container>
 
@@ -108,9 +111,10 @@ const AboutPage = () => {
           </div>
 
         </Container>
-
+            
       </Section>
-
+             <Agents />
+             <CTA/>
     </main>
   );
 };

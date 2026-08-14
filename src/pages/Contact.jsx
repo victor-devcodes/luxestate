@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import Container from "../components/ui/Container";
 import Section from "../components/ui/Section";
+import BookInspection from "./BookInspection";
 
 const Contact = () => {
   return (
@@ -136,7 +137,9 @@ const Contact = () => {
         </Container>
 
       </Section>
-
+      <div className="bg-black/5">
+            <BookInspection/>
+            </div>
     </main>
   );
 };

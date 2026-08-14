@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { FaInstagram, FaFacebookF, FaLinkedinIn, FaMapMarkedAlt} from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaLinkedinIn, FaMapMarkedAlt, FaPhone, FaEnvelope } from "react-icons/fa";
+import { HiOutlineMapPin } from "react-icons/hi2";
 
 import Container from "../ui/Container";
 
@@ -64,7 +65,7 @@ const Footer = () => {
                 max-w-sm
                 text-sm
                 leading-7
-                text-gray-500
+                text-gray-400
               "
             >
               Exceptional properties.
@@ -245,28 +246,28 @@ const Footer = () => {
             <nav className="mt-6 flex flex-col gap-4">
 
               <a
-                href="#"
+                href="#services"
                 className="text-sm text-gray-500 transition hover:text-black"
               >
                 Property Sales
               </a>
 
               <a
-                href="#"
+                href="#services"
                 className="text-sm text-gray-500 transition hover:text-black"
               >
                 Private Acquisitions
               </a>
 
               <a
-                href="#"
+                href="#services"
                 className="text-sm text-gray-500 transition hover:text-black"
               >
                 Property Marketing
               </a>
 
               <a
-                href="#"
+                href="#services"
                 className="text-sm text-gray-500 transition hover:text-black"
               >
                 Investment Advisory
@@ -299,37 +300,42 @@ const Footer = () => {
               <a
                 href="mailto:hello@luxestate.com"
                 className="
-                  block
+                  flex
+                  gap-2
+                  items-center
                   text-sm
                   text-gray-500
                   transition
                   hover:text-black
                 "
               >
-                hello@luxestate.com
+               <FaEnvelope /> hello@luxestate.com
               </a>
 
               <a
                 href="tel:+1234567890"
                 className="
-                  block
+                  flex
+                  gap-2
+                  items-center
                   text-sm
                   text-gray-500
                   transition
                   hover:text-black
                 "
               >
-                +1 (234) 567-890
+               <FaPhone /> +1 (234) 567-890
               </a>
 
               <p
-                className="
+                className="flex
                   text-sm
                   leading-7
-                  text-gray-500
-                "
-              >
-                Beverly Hills
+                  text-gray-400
+                  gap-2
+                  items-baseline 
+                ">
+               <HiOutlineMapPin /> Beverly Hills
                 <br />
                 California, USA
               </p>

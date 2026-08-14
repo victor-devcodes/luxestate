@@ -26,7 +26,7 @@ function HomePage() {
     <>
       <main>
         <Hero />
-        <Properties />
+        <Properties limit={3}/>
         <div className="bg-gray-50">
           <About />
         </div>
