@@ -4,6 +4,7 @@ const Button = ({
   children,
   variant = "primary",
   onClick,
+  className = "",
 }) => {
 
   const styles = {
@@ -29,6 +30,7 @@ const Button = ({
         rounded-xl
         transition-all
         duration-300
+        ${className}
         ${styles[variant]}
       `}
     >

@@ -37,19 +37,16 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                     inline-flex
                                     items-center
                                     justify-center
-                                    rounded-xl
-                                    bg-black
                                     text-sm
                                     font-semibold
                                     text-white
                                     transition
-                                    hover:bg-gray-800
                                 "
                                 >
                                 Book an Inspection
                             </Link>                            
                         </Button>
-                        <Button variant="secondary">Call Now</Button>
+                        <Button variant="secondary"><a href="tel:+123456890">Call Now</a></Button>
                         </div>
                     </nav>
                     
@@ -90,23 +87,21 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                 <Button>
                                     <Link
                                         to="/book-inspection"
+                                        onClick={() => setIsMenuOpen(false)}
                                         className="
                                             inline-flex
                                             items-center
                                             justify-center
-                                            rounded-xl
-                                            bg-black
                                             text-sm
                                             font-semibold
                                             text-white
                                             transition
-                                            hover:bg-gray-800
                                         "
                                         >
                                         Book an Inspection
                                     </Link>
                                 </Button>
-                                <Button variant="secondary">Call Now</Button>
+                                <Button variant="secondary"><a href="tel:+123456890">Call Now</a></Button>
 
                             </div>
 
